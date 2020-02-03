@@ -5,6 +5,7 @@ import RoutesUsers from './src/routes/routes_users';
 import RoutesShops from './src/routes/routes_shops';
 import RoutesCategories from './src/routes/routes_categories';
 import RoutesProducts from './src/routes/routes_products';
+import RoutesPurchases from './src/routes/routes_purchases';
 
 class Server {
 
@@ -28,6 +29,7 @@ class Server {
         this.app.use('/api/shops/', RoutesShops);
         this.app.use('/api/categories/', RoutesCategories);
         this.app.use('/api/products/', RoutesProducts);
+        this.app.use('/api/purchases/', RoutesPurchases);
     }
 
     start(): void {
